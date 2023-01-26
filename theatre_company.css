@@ -1,0 +1,242 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font: roboto;
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.flex-nav{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    text-decoration: none;  
+}
+
+.nav-item{
+    text-align: center;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.name{
+    margin-right: 550px;
+    font-size: 50px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.7), 
+    rgba(0,0,0,0.7)), url(./img/theater-image-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+    font-family: serif;
+
+}
+
+.hero-text h1{
+    font-size: 200px;
+    font-weight: 500;
+}
+
+.heading{
+    text-align: left;
+    padding-left: 50px;
+    border: solid 1px gray;
+    background-color: rgb(236, 236, 236);
+    width: 1250px;
+    margin-left: 630px;
+    padding: 14px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5ir;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". pic text text button ."
+    ". pic2 text2 text2 button2 ."
+    ". pic3 text3 text3 button3 ."
+    ". pic4 text4 text4 button4 .";
+    margin-bottom: 80px;
+}
+
+.pic{
+    grid-area: pic;
+    padding: 40px;
+}
+
+.text{
+    grid-area: text;
+    text-align: left;
+    justify-items: center;
+    font-size: x-large;
+}
+
+.button{
+    grid-area: button;
+    width: 180px;
+    height: 80px;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(238, 184, 83);
+    font-size: 20pt;
+    color: white;
+    border-color: lightgray;
+    margin-top: 100px;
+}
+
+.pic2{
+    grid-area: pic2;
+    padding: 40px;
+}
+
+.text2{
+    grid-area: text2;
+    text-align: left;
+    justify-items: left;
+    font-size: x-large;
+}
+
+.button2{
+    grid-area: button2;
+    width: 180px;
+    height: 80px;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(238, 184, 83);
+    font-size: 20pt;
+    color: white;
+    border-color: lightgray;
+    margin-top: 100px;
+}
+
+.pic3{
+    grid-area: pic3;
+    padding: 40px;
+}
+
+.text3{
+    grid-area: text3;
+    text-align: left;
+    justify-items: left;
+    font-size: x-large;
+    
+}
+
+.button3{
+    grid-area: button3;
+    width: 180px;
+    height: 80px;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(238, 184, 83);
+    font-size: 20pt;
+    color: white;
+    border-color: lightgray;
+    margin-top: 100px;
+}
+
+.pic4{
+    grid-area: pic4;
+    padding: 40px;
+}
+
+.text4{
+    grid-area: text4;
+    text-align: left;
+    justify-items: left;
+    font-size: x-large;
+}
+
+.button4{
+    grid-area: button4;
+    width: 180px;
+    height: 80px;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(238, 184, 83);
+    font-size: 20pt;
+    color: white;
+    border-color: lightgray;
+    margin-top: 100px;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: black;
+    list-style: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.foot-grid{
+    display: grid;
+    padding: 80px;
+    gap: 1ir;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "img list list2 list3";
+}
+
+.img{
+    grid-area: img;
+    justify-content: right;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.list{
+    grid-area: list;
+    text-align: left;
+    justify-self: center;
+
+}
+
+.list2{
+    grid-area: list2;
+    text-align: left;
+    justify-self: center;
+}
+
+.list3{
+    grid-area: list3;
+    text-align: left;
+    justify-self: center;
+}
+
+.li{
+    margin-bottom: 40px;
+}
