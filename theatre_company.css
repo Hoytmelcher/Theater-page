@@ -64,16 +64,24 @@ body{
     font-weight: 500;
 }
 
+.heading-class {
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    margin-top: 15px;
+}
+
 .heading{
     text-align: left;
     padding-left: 50px;
     border: solid 1px gray;
     background-color: rgb(236, 236, 236);
-    width: 1250px;
-    margin-left: 630px;
+    width: 1200px;
+    margin: auto;
     padding: 14px;
     font-size: larger;
     font-weight: 600;
+
 }
 
 .grid{
@@ -239,4 +247,86 @@ footer{
 
 .li{
     margin-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+    .nav-item {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .li {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .img {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+    .foot-grid{
+        display: grid;
+        padding: 80px;
+        gap: 1ir;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "list list2 list3";
+    }
+}
+
+@media (max-width: 1000px) {
+    .grid{
+        display: grid;
+        gap: 1.5ir;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "text text" 
+        "pic button"
+        "text2 text2"
+        "pic2 button2"
+        "text3 text3"
+        "pic3 button3"
+        "text4 text4"
+        "pic4 button4";
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text {
+        margin: auto;
+    }
+    .text2 {
+        margin: auto;
+    }
+    .text3 {
+        margin: auto;
+    }
+    .text4 {
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .pic {
+        margin: auto;
+    }
+    .pic2 {
+        margin: auto;
+    }
+    .pic3 {
+        margin: auto;
+    }
+    .pic4 {
+        margin: auto;
+    }
 }
